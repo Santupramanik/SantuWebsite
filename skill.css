@@ -1,0 +1,58 @@
+*{
+    background: #090909;
+   
+}
+.skillp{
+    text-align: center;
+    color: white;
+    font-size: 36.5px;
+    font-family:'Mochiy Pop P One' ;
+    font-weight: bolder
+}
+.skillpart{
+    display: inline-flex;
+    color: white;
+    width: 9pc;
+    border: 1px solid;
+    border-radius: 6px;
+    padding: 2px;
+    height: 34px;
+    margin: 9px;
+}
+.green{
+    width: 90%;
+    background-color: greenyellow;
+    color: black;
+    border: 1px solid;
+    border-radius: 5px 5px;
+    
+}
+.white{
+    width: 30%;
+
+}
+#cssbg{
+    background-color: cyan;
+    width: 80%;
+}
+#jsbg{
+    background-color: darkorange;
+    width: 12%;
+}
+#cbg{
+    background-color: darkseagreen;
+    width: 50%;
+}
+#phbg{
+    background-color: rgb(233, 103, 129);
+    width: 45.7%;
+}
+.skillinfo{
+    margin: 8px;
+    text-align: center;
+}
+.topbtn{
+    border: 1px solid red;
+    width: 30px;
+    padding: 12px;
+}

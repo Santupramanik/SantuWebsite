@@ -1,0 +1,41 @@
+.gallerybox{
+    display: flex;
+}
+.box{
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+}
+.box img{
+    /* display: inline; */
+    border: 1px solid white;
+    border-radius: 12px;
+    /* width: min-width; */
+    width: 197px;
+    margin: 12px;
+    
+}
+.gallerybox{
+    color: beige;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.galleryh{
+    /* color: blanchedalmond; */
+    text-align: center;
+    color: white;
+    font-size: 35.5px;
+    font-family:'Mochiy Pop P One' ;
+    font-weight: bolder
+}
+#box4 img{
+    width: 24pc;
+}
+.familyh{
+    color: white;
+    font-size: 25px;
+    font-family: cursive;
+    font-weight: 900;
+    text-align: center;
+}

@@ -1,0 +1,17 @@
+@media only screen and (max-width:1106px){
+    .box img{
+        width: 157px;
+    }
+    #box4 img{
+        width: 19pc;
+        
+    }
+}
+@media only screen and (max-width:512px){
+    .box img{
+        width: 136px;
+    }
+    #box4 img{
+        width: 17pc;
+    }
+}

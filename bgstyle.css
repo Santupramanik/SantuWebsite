@@ -1,0 +1,34 @@
+*{
+    margin: 0%;
+    padding: 0%;
+}
+body{
+    background-image: url(bgvas.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.mypic{
+    border: 1px solid black;
+    border-radius: 20pc;
+    width: 13pc;
+}
+.details{
+    /* width: 20px; */
+    font-size: 17px;
+    color: white;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+}
+.box{
+    width: 26pc;
+    text-align: center;
+    border: 4px solid;
+    border-radius: 8px;
+    padding: 30px;
+    background-color: rgba(23, 29, 29, 0.582);
+    /* margin-left: 47pc; */
+    margin-top: 8pc;
+    margin-left: 50%;
+    margin-right: 50%;
+    display: block;
+}

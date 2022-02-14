@@ -1,0 +1,14 @@
+@media only screen  and (min-width:644px){
+    .skillpart{
+        margin: 16px;
+    }
+}
+@media only screen and (min-width:740px){
+    .about{
+        border: 1px solid #545e8e;
+    /* border-radius: 1pc; */
+    margin: 19px;
+    margin: 1pc 7pc 3pc 6pc;
+    box-shadow: -3px 0px 20px 3px #6a6c7294;
+    }
+}
