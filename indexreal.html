@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Siddheswar Pramanik - Portfolio</title>
+    <link rel="stylesheet" href="stylefor.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            background: #0a0a0a;
+            color: #fff;
+            overflow-x: hidden;
+        }
+
+        /* Navbar Styles */
+        .navbar {
+            /* position: fixed; */
+            top: 0;
+            width: 100%;
+            padding: 1.5rem;
+            background: rgba(10, 10, 10, 0.95);
+            backdrop-filter: blur(10px);
+            z-index: 1000;
+            transition: all 0.3s ease;
+        }
+
+        .navbar-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: #fff;
+            text-decoration: none;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 2rem;
+        }
+
+        .nav-links a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.3s ease;
+        }
+
+        .nav-links a:hover {
+            color: #64ffda;
+        }
+
+        /* Hero Section */
+        .hero {
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            padding: 0 2rem;
+            background: linear-gradient(rgba(10, 10, 10, 0.8), rgba(10, 10, 10, 0.8)),
+                url('/api/placeholder/1920/1080') center/cover;
+        }
+
+        .hero-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            align-items: center;
+            gap: 4rem;
+        }
+
+        .hero-text {
+            flex: 1;
+        }
+
+        .hero-image {
+            flex: 1;
+            text-align: center;
+        }
+
+        .hero-image img {
+            width: 300px;
+            height: 300px;
+            border-radius: 50%;
+            border: 4px solid #64ffda;
+            object-fit: cover;
+        }
+
+        .hero h1 {
+            font-size: 3.5rem;
+            margin-bottom: 1rem;
+            color: #64ffda;
+        }
+
+        .hero p {
+            font-size: 1rem;
+            margin-bottom: 2rem;
+            color: #a8b2d1;
+        }
+
+        /* Skills Section */
+        .skills {
+            padding: 6rem 2rem;
+            background: #111;
+        }
+
+        .section-title {
+            text-align: center;
+            font-size: 2.5rem;
+            margin-bottom: 3rem;
+            color: #64ffda;
+        }
+
+        .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .skill-card {
+            background: #1a1a1a;
+            padding: 2rem;
+            border-radius: 1rem;
+            transition: transform 0.3s ease;
+        }
+
+        .skill-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .skill-name {
+            font-size: 1.2rem;
+            margin-bottom: 1rem;
+            color: #fff;
+        }
+
+        .progress-bar {
+            height: 8px;
+            background: #2d2d2d;
+            border-radius: 4px;
+            overflow: hidden;
+        }
+
+        .progress {
+            height: 100%;
+            background: #64ffda;
+            transition: width 1s ease;
+        }
+
+        /* Blog Section */
+        .blog {
+            padding: 6rem 2rem;
+        }
+
+        .blog-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .blog-card {
+            background: #1a1a1a;
+            border-radius: 1rem;
+            overflow: hidden;
+            transition: transform 0.3s ease;
+        }
+
+        .blog-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .blog-image {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+
+        .blog-content {
+            padding: 1.5rem;
+        }
+
+        .blog-title {
+            font-size: 1.2rem;
+            margin-bottom: 1rem;
+            color: #fff;
+        }
+
+        .blog-excerpt {
+            color: #a8b2d1;
+            margin-bottom: 1rem;
+        }
+
+        .read-more {
+            display: inline-block;
+            padding: 0.5rem 1rem;
+            background: #64ffda;
+            color: #0a0a0a;
+            text-decoration: none;
+            border-radius: 4px;
+            transition: background 0.3s ease;
+        }
+
+        .read-more:hover {
+            background: #4cd6b4;
+        }
+
+        /* Footer */
+        .footer {
+            padding: 2rem;
+            background: #111;
+            text-align: center;
+        }
+
+        .social-links {
+            display: flex;
+            justify-content: center;
+            gap: 1.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .social-links a {
+            color: #fff;
+            font-size: 1.5rem;
+            transition: color 0.3s ease;
+        }
+
+        .social-links a:hover {
+            color: #64ffda;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .hero-content {
+                flex-direction: column-reverse;
+                text-align: center;
+            }
+
+            .hero h1 {
+                font-size: 2.5rem;
+            }
+
+            .nav-links {
+                display: none;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="navbar-content">
+            <a href="#" class="logo">SP</a>
+            <div class="nav-links">
+                <a href="#home">Home</a>
+                <a href="#about">About</a>
+                <a href="#skills">Skills</a>
+                <a href="#blog">Blog</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-content">
+            <div class="hero-text">
+                <h1>Hi, I'm <span class="highlight">Siddheswar Pramanik</span></h1>
+                <p>AKA <span style="color: #ffd700;"><strong>Santu</strong></span>,a JEE aspirant, passionate about
+                    <strong>technology</strong> and <strong>Coding</strong>and exploring new ideas.As a tech and AI
+                    enthusiast, I love exploring new ideas and constantly learning to innovate and grow. </p>
+                <a href="#about" class="read-more">Learn More</a>
+            </div>
+            <div class="hero-image">
+                <img src="https://blogger.googleusercontent.com/img/a/AVvXsEgH-8hvui-9ka74ALczD-D4rs0H4BuBiXptOVo1tTDwABxgmwlZ3A8ITLAYkxBiXTi7wCw64FjKN1Y4tJcjyh0KBbaLZ0bPrhie3vyG9gK6ORyWrEhLOlYPDBiVF54JibWoup9z3M4aHRO9wW3bmVHLWNAkzlu9TZLifriBRZQw5fFbNr9lJTBhqWpXAPVA" alt="Siddheswar Pramanik" class="floating-image">
+            </div>
+        </div>
+    </section>
+
+
+    <!-- about me section    -->
+
+
+
+    <!-- About me section  -->
+    <section class="about" id="about">
+        <div class="about-container">
+            <h2 id="aboutmescroll">About Me</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>I'm a passionate <span class="highlight">technology</span> and <span
+                            class="highlight">coding</span> enthusiast currently preparing for <strong>JEE</strong> . My
+                        love for <strong style="color: #ffd700;">Artificial Intelligence</strong> and cutting-edge tech drives me to explore and
+                        innovate in the ever-evolving digital world.</p>
+                    <p>When I'm not studying or learning new technologies, I enjoy exploring creative activities like
+                        listing talks and podcasts and watching movies. I love trying out new ideas and always look for ways to improve
+                        myself and my projects.</p>
+                    <p>I'm just getting started on my journey, and I hope to create tech solutions that can make a
+                        positive impact. I'm always open to new opportunities and collaborations, so feel free to reach out
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- Skills Section -->
+    <section class="skills" id="skills">
+        <h2 class="section-title">Skills</h2>
+        <div class="skills-grid">
+            <div class="skill-card">
+                <h3 class="skill-name">HTML</h3>
+                <div class="progress-bar">
+                    <div class="progress" style="width: 90%"></div>
+                </div>
+            </div>
+            <div class="skill-card">
+                <h3 class="skill-name">CSS</h3>
+                <div class="progress-bar">
+                    <div class="progress" style="width: 80%"></div>
+                </div>
+            </div>
+            <div class="skill-card">
+                <h3 class="skill-name">Python</h3>
+                <div class="progress-bar">
+                    <div class="progress" style="width: 40%"></div>
+                </div>
+            </div>
+            <div class="skill-card">
+                <h3 class="skill-name">Bootstrap</h3>
+                <div class="progress-bar">
+                    <div class="progress" style="width: 50%"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Blog Section -->
+    <section class="blog" id="blog">
+        <h2 class="section-title">Blog</h2>
+        <div class="blog-grid">
+            <div class="blog-card">
+                <img src="https://i.ibb.co/HHT77G1/Screenshot-2025-01-05-032159.png" alt="Blog 1" class="blog-image">
+                <div class="blog-content">
+                    <h3 class="blog-title">About Me</h3>
+                    <p class="blog-excerpt">Take a tour of my journey and learn more about who I am...</p>
+                    <a href="#aboutmescroll" class="read-more">Read More</a>
+                </div>
+            </div>
+            <div class="blog-card">
+                <img src="https://lh5.googleusercontent.com/mjv7h7a2aN516PnCx8hFyX8wVyCpJJlhIIUYpQlWG7JyXNac63M3O7vwwbhZrJZjJkxN1QO0ZyNtUQrcozM_ACPOAk2iSL83sb6BZ4M7p3NRE6YFm-Agj5d1qsnxqeLHvw=w1280" alt="Blog 2" class="blog-image">
+                <div class="blog-content">
+                    <h3 class="blog-title">Clicks</h3>
+                    <p class="blog-excerpt">Explore my collection of raw and unfiltered captures...</p>
+                    <a href="https://tinyurl.com/capturefromsantu" class="read-more">View Gallery</a>
+                </div>
+            </div>
+            <div class="blog-card">
+                <img src="https://lh3.googleusercontent.com/gg/AJxt1KP5lRT5aCjzmCeX8MfipxXtuJuonv6tRrqwxwGbUY6eNasH46DwlI_66YavMm9fnOMo3QlyAbtwYbpLDnWQZ1VS0uaHvUxs0hADciUe8_eUwSDaGHWGgrqJc5luhIbsqNMy9zVkMb4tmdiVxXs6WoQMhGXWnpbQG20nXlAxqVSo1ggJfo6V" alt="Blog 3" class="blog-image">
+                <div class="blog-content">
+                    <h3 class="blog-title">Projects</h3>
+                    <p class="blog-excerpt">Check out my latest project , Student tracker site...</p>
+                    <a href="https://santupramanik.github.io/trackmyspend/" class="read-more">View Projects</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="social-links">
+            <a href="https://github.com/Santupramanik"><i class="fab fa-github" style="color:#fff"></i></a>
+            <a href="https://www.instagram.com/s_pramanik1/"><i class="fab fa-instagram"></i></a>
+            <a href="mailto:pramaniksiddheswar26@gmail.com"><i class="fas fa-envelope"></i></a>
+        </div>
+        <p>© 2024 Siddheswar Pramanik. All rights reserved.</p>
+    </footer>
+    <!-- <footer class="footer">
+        <div class="social-links">
+            <a href="https://github.com/Santupramanik" class="social-icon" aria-label="GitHub"><i class="fab fa-github"></i></a>
+            <a href="https://www.instagram.com/s_pramanik1/" class="social-icon" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="mailto:pramaniksiddheswar26@gmail.com" class="social-icon" aria-label="Email"><i class="fas fa-envelope"></i></a>
+        </div>
+        <p class="footer-text">© 2024 Siddheswar Pramanik. All rights reserved.</p>
+    </footer> -->
+    
+    
+
+
+</body>
+
+
+</html>

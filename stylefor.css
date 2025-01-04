@@ -1,0 +1,220 @@
+.hero-image {
+    position: relative;
+    text-align: center; /* Center the image */
+    margin-top: 20px; /* Adjust the margin as needed */
+}
+
+.floating-image {
+    width: 200px; /* Adjust size */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 15px; /* Rounded corners */
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2); /* Add shadow */
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out; /* Smooth transition */
+}
+
+.floating-image:hover {
+    transform: scale(1.1) translateY(-10px); /* Enlarge and move slightly up */
+    box-shadow: 0 15px 25px rgba(0, 0, 0, 0.3); /* Darker shadow on hover */
+}
+
+.floating-image {
+    animation: floating 3s ease-in-out infinite; /* Floating animation */
+}
+
+@keyframes floating {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px); /* Move up */
+    }
+}
+
+
+
+/* hero section     */
+
+/* General Styling */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif; /* Professional font */
+    background-color: #f9f9f9; /* Light background */
+    color: #333; /* Dark text */
+}
+
+/* Hero Section Styling */
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 80px 20px;
+    background: linear-gradient(135deg, #007bff, #6c63ff); /* Gradient background */
+    color: #fff; /* White text */
+}
+
+.hero-content {
+    display: flex;
+    flex-wrap: wrap; /* Adjusts layout for small screens */
+    max-width: 1200px;
+    width: 100%;
+    align-items: center;
+    gap: 40px;
+}
+
+.hero-text {
+    flex: 1;
+    text-align: left;
+}
+
+.hero-text h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+.hero-text .highlight {
+    color: #ffd700; /* Highlighted text */
+}
+
+.hero-text p {
+    font-size: 1rem;
+    line-height: 1.8;
+    margin-bottom: 30px;
+}
+
+.cta-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #ffd700; /* Button color */
+    color: #333;
+    font-size: 1rem;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 5px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease;
+}
+
+.cta-button:hover {
+    background-color: #ffcc00;
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+}
+
+/* Hero Image Styling */
+.hero-image {
+    flex: 1;
+    text-align: center;
+}
+
+.floating-image {
+    width: 300px;
+    border-radius: 20px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+    animation: floating 4s ease-in-out infinite;
+}
+
+@keyframes floating {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .hero-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .hero-text h1 {
+        font-size: 2.5rem;
+    }
+
+    .hero-text p {
+        font-size: 1rem;
+    }
+
+    .floating-image {
+        width: 250px;
+    }
+}
+
+
+
+
+/* About me section  */
+
+
+/* About Section */
+.about {
+    background-color: #000;
+    color: #fff;
+    padding: 50px 0;
+    text-align: center;
+    animation: fadeIn 2s ease-in-out;
+}
+
+.about h2 {
+    font-size: 36px;
+    color: #ffd700;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.about-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    flex-wrap: wrap;
+}
+
+.about-text {
+    max-width: 700px;
+    font-size: 18px;
+    line-height: 1.6;
+    color: #64ffda;
+    animation: fadeIn 2.5s ease-in-out;
+}
+
+.about-text p {
+    margin-bottom: 15px;
+}
+
+.highlight {
+    color: #ffd700;
+    font-weight: bold;
+}
+
+/* Keyframe for Fade-in Animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@media (max-width: 768px) {
+    .about-container{padding: 33px;}
+     
+}
+
+/* footer section  */
+/* Footer Styling */
+/* Footer Styling */
+
+
+/* Footer Text Styling */
+/* Footer Styling */
+/* Footer Styling */
+/* Footer Styling */
+
