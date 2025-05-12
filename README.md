@@ -34,34 +34,12 @@ My skills have evolved a lot since creating this project, and I’m now working 
 
 ### 🏆 **Connect with Me**
 
-- **GitHub**: [Your GitHub](https://santupramanik.github.io/)
-- **LinkedIn**: [Your LinkedIn](https://www.linkedin.com/in/siddheswar-pramanik-90a163359/)
-
----
-
-### 📌 **Project Snapshot**
-
-![Project Screenshot](https://via.placeholder.com/600x400.png)  
+- **GitHub**: [My GitHub](https://santupramanik.github.io/)
+- **LinkedIn**: [My LinkedIn](https://www.linkedin.com/in/siddheswar-pramanik-90a163359/)
 
 ---
 
 ### 🔗 **Explore More**
 
-Check out my [other projects](https://github.com/yourusername) to see my growth and new work.
+Check out my [other projects](https://santupramanik.github.io/) to see my growth and new work.
 
----
-
-### Example Badges:
-
-You can add badges that show off the technology used or project status. Here’s an example of badges you can include:
-
-![HTML](https://img.shields.io/badge/HTML-5-orange)  
-![CSS](https://img.shields.io/badge/CSS-3-blue)  
-
----
-
-### 🚀 **Let's Build!**
-
-If you're just starting out, I encourage you to keep experimenting and building. Web development is a fun and rewarding journey that you can keep improving over time!
-
----
