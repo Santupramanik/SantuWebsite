@@ -5,6 +5,11 @@
   .navbar {
     margin: 4px;
   }
+  .introp h1 {
+    font-size: x-large; /* Further reduce font size for mobile */
+    margin-top: 3pc;    /* Further reduce margin top */
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.3); /* Subtler text shadow */
+  }
 }
 @media only screen and (max-width: 240px) {
   .item a {
@@ -31,32 +36,18 @@
     flex-direction: column;
     /* flex-wrap: nowrap; */
   }
-  /* .intropic{
-    width: none;
-  } */
-  /* .mypic{
-    display: block;
-    margin-left: auto;
+  .intropic, .introp {
+    width: 100%; /* Ensure they take full width when stacked */
+  }
+  .mypic { /* Adjustments for the picture within intropic if needed */
+    margin-left: auto; /* Center the image if it's smaller than its container */
     margin-right: auto;
-    width: 50%;
-  } */
-  /* .mypic {
-    margin-left: 1px;
+    /* Consider reducing width if it's too large, e.g., width: 18pc; */
   }
-  .introp{
-    width:auto ;
-    padding: 0;
-  } */
-  /* .introp h1{
-    font-size: revert;
-    margin-top: 1px;
+  .introp h1{
+    font-size: xx-large; /* Reduce font size for tablets */
+    margin-top: 5pc;   /* Reduce margin top */
   }
-  .intropic{
-    width: none;
-  }
-  .introp{
-    width: none;
-  } */
 }
 /* @media only screen and (min-width:1000px){
   .introp h1{
